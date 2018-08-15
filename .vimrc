@@ -25,7 +25,7 @@ filetype indent on " Load filetype-specific indent files
 set incsearch " Search as characters are entered
 set hlsearch " Highlight matches
 
-" Turn off search highlight with ,space
+" Turn off search highlight with \space
 " Vim will keep highlighted matches from searches until you either run a new one or manually stop highlighting the old search with :nohlsearch
 nnoremap <leader><space> :nohlsearch<CR>
 
