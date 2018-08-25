@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+
+echo "AES-256-CBC encryption"
+read -e -p "Enter a single file/directory to encrypt: " INPUT
+
+tar -czv $INPUT | openssl enc -aes-256-cbc -salt -out $INPUT.tar.gz.aes256cbc
+
+echo "Done."

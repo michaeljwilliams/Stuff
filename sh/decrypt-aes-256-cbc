@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+
+echo "AES-256-CBC decryption"
+read -e -p "Enter file to decrypt: " INPUT
+
+DECRYPTED=${INPUT%.aes256cbc}
+
+openssl enc -d -aes-256-cbc -in $INPUT | tar -xzvf -
+
+#rm -rf $DECRYPTED
+
+echo "Done."
