@@ -3,5 +3,11 @@
     "editor.detectIndentation": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+    "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.titleBarStyle": "custom",
+    "prettier.tabWidth": 4,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
