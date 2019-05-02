@@ -3,5 +3,11 @@
     "editor.detectIndentation": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+    "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.minimap.enabled": false,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "prettier.trailingComma": "es5",
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true
 }
