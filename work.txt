@@ -1,0 +1,9 @@
+Designed and developed a solution for collecting, maintaining, and exporting data of thousands of IoT devices. This app is used daily by people throughout the company and has had <.01% unplanned downtimeover six months with zero data loss. The app has a friendly user interface that allows non-technical employees to add and consume data. The app also features an API that allows data to be shared with other services. Tech: React, Express/Node.js, MySQL, AWS
+
+Developed an API server that facilitates communication amongst internal apps and between internal and external apps. This service allows the company's apps to communicate with each other and with outside APIs using a simple, standardized format, with the server handling complexities such as authentication, logging, error handling, request formatting, etc. all in one place. This has significantly sped up development time for other apps. Tech: Express/Node.js, AWS
+
+SAAS Platform Manager
+
+PL to Wialon
+
+Worked on a solution for performing work on IoT devices with high efficiency and plug-and-play ease. I designed and developed a web-based management interface that enables users to quickly set up tasks and provides a high-level, easy to understand overview of what's happening in the system. I wrote the system's API, which integrates the web app with a database and a desktop workstation app. I also designed the user interface for the desktop app, then handed development off to another engineer. For the desktop UI I conceived and designed several great ease-of-use features that will provide significant value to customers.
