@@ -16,18 +16,18 @@ PM2 website: http://pm2.keymetrics.io/
 
 Clone the git repo of the app you want to run, then cd app directory.
 
-Install project dependencies.
+Install project dependencies:
 npm i
 
 Build the project if necessary (varies by project but typically `npm run build` is sufficient).
 
-For React and other front-end-only apps you may need to install a basic web server.
+For React and other front-end-only apps you may need to install a basic web server:
 npm i -g serve
 
 Add the app to PM2. The file may not be named app.js. The entry point should be given in package.json > main or package.json > scripts > start.
 pm2 start app.js
 
-Check that you added the app correctly. You should be able to access the app and use the following command to see it in PM2.
+Check that you added the app correctly. You should be able to access the app and use the following command to see it in PM2:
 pm2 list
 
 A few more PM2 commands:
