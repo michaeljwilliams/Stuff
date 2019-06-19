@@ -8,15 +8,16 @@ It is more secure to run apps without root privileges, so create a new user if n
 
 For production, to run node apps on port 80 (normally requires root privileges). Not needed for dev (with ports like 3000).
 sudo apt-get install libcap2-bin
-sudo setcap cap_net_bind_service=+ep /usr/local/bin/node
+nodePath=$(which node) && sudo setcap cap_net_bind_service=+ep $nodePath
 
 Install PM2 (Process Manager 2). PM2 is used to manage node processes (eg logging and restart when an app crashes).
 npm i -g pm2
 PM2 website: http://pm2.keymetrics.io/
 
 Clone the git repo of the app you want to run, then cd app directory.
+Or push project files to the server, for production.
 
-Install project dependencies:
+Install project dependencies if necessary:
 npm i
 
 Build the project if necessary (varies by project but typically `npm run build` is sufficient).
@@ -24,7 +25,7 @@ Build the project if necessary (varies by project but typically `npm run build` 
 For React and other front-end-only apps you may need to install a basic web server:
 npm i -g serve
 
-Add the app to PM2. The file may not be named app.js. The entry point should be given in package.json > main or package.json > scripts > start.
+Add the app to PM2. The file might not be named app.js. The entry point should be given in package.json > main or package.json > scripts > start.
 pm2 start app.js
 
 Check that you added the app correctly. You should be able to access the app and use the following command to see it in PM2:
