@@ -4,7 +4,10 @@ module.exports = {
         "browser": true,
         "node": true,
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -19,5 +22,6 @@ module.exports = {
     "rules": {
         "no-console": 0,
         "no-unused-vars": 1,
+        "react/display-name": 0,
     },
 };
