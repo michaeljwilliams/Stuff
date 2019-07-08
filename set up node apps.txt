@@ -1,4 +1,4 @@
-Install NVM (Node Version Manager)))
+Install NVM (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 Use NVM to install the latest LTS version of Node.js (10.x.x as of this writing).
