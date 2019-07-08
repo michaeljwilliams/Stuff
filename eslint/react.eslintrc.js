@@ -2,6 +2,7 @@ module.exports = {
     "env": {
         "es6": true,
         "browser": true,
+        "node": true,
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -18,6 +19,5 @@ module.exports = {
     "rules": {
         "no-console": 0,
         "no-unused-vars": 1,
-        "use": ["babel-loader", "eslint-loader"]
     },
 };
