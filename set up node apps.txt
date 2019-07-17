@@ -25,7 +25,10 @@ Build the project if necessary (varies by project but typically `npm run build` 
 For React and other front-end-only apps you may need to install a basic web server:
 npm i -g serve
 
-Add the app to PM2. The file might not be named app.js. The entry point should be given in package.json > main or package.json > scripts > start.
+To run apps from terminal, usually just
+npm start
+
+To run apps on PM2: Add the app to PM2. The file might not be named app.js. The entry point should be given in package.json > main or package.json > scripts > start.
 pm2 start app.js
 
 Check that you added the app correctly. You should be able to access the app and use the following command to see it in PM2:
@@ -40,5 +43,5 @@ pm2 start 0      Start app with ID 0.
 pm2 delete 0     Stop app with ID 0 and remove it from PM2.
 
 Set up PM2 to start all the apps it manages automatically when the server reboots. Change USERNAME to the user that will be running the app.
-sudo env PATH=$PATH:/usr/local/bin pm2 startup -u USERNAME
+pm2 startup
 
