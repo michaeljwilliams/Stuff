@@ -42,6 +42,6 @@ pm2 stop 0       Stop app with ID 0.
 pm2 start 0      Start app with ID 0.
 pm2 delete 0     Stop app with ID 0 and remove it from PM2.
 
-Set up PM2 to start all the apps it manages automatically when the server reboots. Change USERNAME to the user that will be running the app.
+Set up PM2 to start all the apps it manages automatically when the server reboots. Enter below command and follow instructions outputted.
 pm2 startup
 
